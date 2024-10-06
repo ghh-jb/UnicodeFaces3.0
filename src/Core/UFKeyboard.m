@@ -10,24 +10,10 @@
 }
 
 -(void)buttonPressReceived:(UIButton *)src {
-	BOOL isiOS15 = false;
-	if (@available(iOS 15.0, *)) {
-    	isiOS15 = true;
-	}
-
-
 	NSLog(@"[UF] Current title is %@", src.currentTitle);
-	NSLog(@"[UF] The button title is %@", [src.titleLabel.text stringByAppendingString:@" "]);
-	if(isiOS15) {
-		NSLog(@"[UF] Running on iOS 15 and up. Proceeding with <withAlternatePredictions:nil> option.");
-		[_keyboard insertText:src.currentTitle withAlternativePredictions:nil];
-	} else if(!isiOS15) {
-		NSLog(@"[UF] Running on iOS 14 and down. Proceeding with straight insert option");
-		[_keyboard insertText:src.currentTitle];
-	}
-	// } else {
-	// 	NSLog(@"[UF] No support will be provided for your version!");
-	// }
+	NSLog(@"[UF] Running on iOS -> proceeding with <withAlternatePredictions:nil> option.");
+	[_keyboard insertText:src.currentTitle withAlternativePredictions:nil];
+	
 	
 }
 @end
