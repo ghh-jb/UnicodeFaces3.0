@@ -20,7 +20,7 @@
 - (void)uf_toggleKeyboard:(NSArray *)subviews intent:(NSString *)intent;
 
 - (void)insertText:(id)arg1 withAlternativePredictions:(id)arg2;
-- (void)insertText:(id)text;
+// - (void)insertText:(id)arg1; // ios 14 and lower
 - (CGRect)frame;
 - (void)performSelectorInBackground:(SEL)aSelector withObject:(id)arg;
 - (NSArray *)subviews;
