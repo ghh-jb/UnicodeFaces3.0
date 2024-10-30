@@ -1,4 +1,4 @@
-TARGET := iphone:clang:15.2:15.2
+TARGET := iphone:clang:15.2:14.5
 ARCHS = arm64 arm64e
 TWEAK_NAME = UnicodeFaces
 
