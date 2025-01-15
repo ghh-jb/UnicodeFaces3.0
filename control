@@ -1,6 +1,6 @@
 Package: com.ghh.unicodefaces
 Name: Unicode Faces
-Depends: firmware(>=13.0), mobilesubstrate, com.tapsharp.libtapsharp (>= 1.0.1)
+Depends: firmware(>=13.0), mobilesubstrate
 Conflicts:org.seatanners.unifaces
 Version: 3.10-beta1
 Architecture: iphoneos-arm

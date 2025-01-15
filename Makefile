@@ -3,8 +3,8 @@ ARCHS = arm64 arm64e
 TWEAK_NAME = UnicodeFaces
 
 UnicodeFaces_CFlags = -fobjc-arc -include src/macros.h
-UnicodeFaces_FILES = src/Core/UFKeyboard.m src/Core/Keyboard.xm src/Preferences/UFSettings.m
-UnicodeFaces_LIBRARIES += tapsharp
+UnicodeFaces_FILES = src/Core/UFKeyboard.m src/Core/Keyboard.xm
+# UnicodeFaces_LIBRARIES += tapsharp
 
 # SUBPROJECTS += src/Preferences
 

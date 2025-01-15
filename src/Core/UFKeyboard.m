@@ -1,6 +1,6 @@
 #import "Keyboard.h"
 #import "UFKeyboard.h"
-#import "../Preferences/UFSettings.h"
+#import "../macros.h"
 
 @implementation UFButtonPressHandler
 +(instancetype)keyboard:(UIKeyboardImpl *)keyboard {
@@ -79,7 +79,8 @@
 
 -(NSArray *)faces {
 	if (_faces == nil) {
-		_faces = [[UFSettings sharedInstance] faces];
+		// _faces = [[UFSettings sharedInstance] faces];
+		_faces = kUFDefaultFaces;
 	}
 	return _faces;
 }
